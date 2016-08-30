@@ -1,6 +1,6 @@
 import test from 'ava'
 import feeble from 'feeble'
-import router from '../src'
+import router from 'router'
 
 const app = feeble()
 

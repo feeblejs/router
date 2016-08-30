@@ -14,8 +14,6 @@ const app = feeble()
 app.use(router)
 
 app.router(routes)
-
-app.start()
 ```
 
 ## License

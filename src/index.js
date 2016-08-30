@@ -1,14 +1,45 @@
-import React from 'react'
-import { browserHistory } from 'react-router'
-import { routerMiddleware, syncHistoryWithStore } from 'react-router-redux'
-import routing from './routing'
+import router from './router'
 
-export default function router(app) {
-  app.middleware(routerMiddleware(browserHistory))
-  app.model(routing)
+export default router
 
-  app.router = Routes => {
-    const history = syncHistoryWithStore(browserHistory, app.store)
-    mount(React.createElement(Routes, { history, store: app.store }))
-  }
-}
+export {
+  Router,
+  Link,
+  IndexLink,
+  withRouter,
+  IndexRedirect,
+  IndexRoute,
+  Redirect,
+  Route,
+  History,
+  Lifecycle,
+  RouteContext,
+  useRoutes,
+  createRoutes,
+  RouterContext,
+  RoutingContext,
+  PropTypes,
+  locationShape,
+  routerShape,
+  match,
+  useRouterHistory,
+  formatPattern,
+  applyRouterMiddleware,
+  browserHistory,
+  hashHistory,
+  createMemoryHistory,
+} from 'react-router'
+
+export {
+  syncHistoryWithStore,
+  LOCATION_CHANGE,
+  routerReducer,
+  CALL_HISTORY_METHOD,
+  push,
+  replace,
+  go,
+  goBack,
+  goForward,
+  routerActions,
+  routerMiddleware,
+} from 'react-router-redux'

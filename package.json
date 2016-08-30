@@ -1,8 +1,8 @@
 {
   "name": "feeble-router",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Feeble router extention",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "test": "NODE_PATH=src NODE_ENV=test ava",
